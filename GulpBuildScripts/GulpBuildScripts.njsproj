@@ -27,6 +27,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gulpfile.js" />
+    <Content Include="exec.cmd" />
+    <Content Include="gulp" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
