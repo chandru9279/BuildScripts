@@ -1,0 +1,7 @@
+*.suo
+*.user
+*.dat
+GulpBuildScripts/node_modules
+GulpBuildScripts/bin
+GulpBuildScripts/obj
+

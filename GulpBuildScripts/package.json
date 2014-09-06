@@ -1,0 +1,18 @@
+{
+  "name": "BuildScripts",
+  "version": "0.0.1",
+  "description": "Build scripts for dotREZ",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dotREZ"
+  ],
+  "author": "JetWorks",
+  "license": "ISC"
+}
