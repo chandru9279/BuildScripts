@@ -14,8 +14,8 @@
     "dotREZ"
   ],
   "author": "JetWorks",
-  "repository" : { 
-	"type" : "git",
-	"url" : "http://github.com/chandru9279/BuildScripts.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/chandru9279/BuildScripts.git"
   }
 }

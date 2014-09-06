@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09d40247-5646-4f48-aa14-917892834444</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>index.js</StartupFile>
+    <StartupFile>gulpfile.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,7 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="index.js" />
+    <Compile Include="gulpfile.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
