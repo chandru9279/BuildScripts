@@ -6,7 +6,7 @@
     <Name>GulpBuildScripts</Name>
     <RootNamespace>GulpBuildScripts</RootNamespace>
   </PropertyGroup>
-  <Import Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"/>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
@@ -14,7 +14,7 @@
     <ProjectHome>.</ProjectHome>
     <StartupFile>index.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
-    <SearchPath/>
+    <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -26,9 +26,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="index.js"/>
-    <Content Include="package.json"/>
-    <Content Include="README.md"/>
+    <Compile Include="index.js" />
+    <Content Include="package.json" />
   </ItemGroup>
-  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets"/>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
 </Project>
