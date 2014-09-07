@@ -26,6 +26,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Conventions.js" />
     <Compile Include="gulpfile.js" />
     <Content Include="Environments\dev.json" />
     <Content Include="exec.cmd" />
