@@ -4,12 +4,12 @@ var concat = require('gulp-concat');
 var rev = require('gulp-rev');
 var msbuild = require('gulp-msbuild');
 var xtend = require('xtend');
-var conventions = require('./Conventions.js');
+var conventions = require('./ProjectConfig/DotRez/Conventions.js');
 
 gulp.task('default', ['minify-css']);
 
 gulp.task('minify-css', function () {
-    return gulp.src(conventions.webPath() + 'Content/*.css')
+    return gulp.src('C:/Projects/Jetstar-Skysales/Website/css/**/*.css')
     .pipe(minifyCSS({keepSpecialComments :0}))
     .pipe(concat("css-combined.min.css"))
     .pipe(rev())

@@ -26,16 +26,18 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Conventions.js" />
+    <Compile Include="ProjectConfig\DotRez\Conventions.js" />
     <Compile Include="gulpfile.js" />
-    <Content Include="Environments\dev.json" />
     <Content Include="exec.cmd" />
     <Content Include="gulp" />
     <Content Include="package.json" />
+    <Content Include="ProjectConfig\DotRez\Environments\dev.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Environments\" />
+    <Folder Include="ProjectConfig\" />
+    <Folder Include="ProjectConfig\DotRez\" />
+    <Folder Include="ProjectConfig\DotRez\Environments\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
 </Project>

@@ -5,15 +5,15 @@ module.exports = {
         return env.repoPath + "Source/";
     },    
     buildPath: function () {
-        return env.repoPath + "Build/";
+        return env.repoPath + "NewCssMinified/";
     },
     webPath: function () {
-        return this.solutionPath() + "Web/";
+        return env.repoPath +"Website/";
     },
     solutionFile: function () {
-        return this.solutionPath() + "Jetstar-DotRez.sln";
+        return env.repoPath + "SkySalesSolution.sln";
     },
     webProjectFile: function () {
-        return this.webPath() + "Web.csproj";
+        return env.repoPath +"Website/" + "Web.csproj";
     }
 }
