@@ -1,0 +1,5 @@
+﻿{
+	"repoPath": "C:/Work/Repos/Jetstar-DotRez/",
+	"env": "dev",
+	"extend": "my-machine.json"
+}

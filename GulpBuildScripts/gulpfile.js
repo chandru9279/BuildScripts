@@ -3,8 +3,9 @@ var minifyCSS = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var rev = require('gulp-rev');
 var msbuild = require('gulp-msbuild');
-var xtend = require('xtend');
-var conventions = require('./ProjectConfig/DotRez/Conventions.js');
+
+// TODO: Get project name as parameter from console
+var conventions = require('./Projects/DotRez/Conventions.js');
 
 gulp.task('default', ['minify-css']);
 

@@ -26,18 +26,25 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ProjectConfig\DotRez\Conventions.js" />
+    <Compile Include="Projects\DotRez\Conventions.js" />
     <Compile Include="gulpfile.js" />
+    <Compile Include="Projects\Skysales\Conventions.js" />
     <Content Include="exec.cmd" />
     <Content Include="gulp" />
     <Content Include="package.json" />
-    <Content Include="ProjectConfig\DotRez\Environments\dev.json" />
+    <Content Include="Projects\DotRez\Environments\qa.json" />
+    <Content Include="Projects\DotRez\Environments\ci.json" />
+    <Content Include="Projects\DotRez\Environments\my-machine.json" />
+    <Content Include="Projects\DotRez\Environments\dev.json" />
+    <Content Include="Projects\Skysales\Environments\dev.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ProjectConfig\" />
-    <Folder Include="ProjectConfig\DotRez\" />
-    <Folder Include="ProjectConfig\DotRez\Environments\" />
+    <Folder Include="Projects\" />
+    <Folder Include="Projects\DotRez\" />
+    <Folder Include="Projects\DotRez\Environments\" />
+    <Folder Include="Projects\Skysales\" />
+    <Folder Include="Projects\Skysales\Environments\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
 </Project>
