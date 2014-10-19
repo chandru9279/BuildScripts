@@ -22,6 +22,11 @@ module.exports = {
         require('../Build/bower-cherry-pick.js');
         require('../Build/js-testing.js');
         require('../Build/js-styling.js');
+
+        require('../Deploy/deploy-web.js');
+        require('../Deploy/iis-local.js');
+        require('../Deploy/iis-remote.js');
+
         require('../Framework/workflows.js');
     }
 }

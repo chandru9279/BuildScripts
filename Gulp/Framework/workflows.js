@@ -14,25 +14,17 @@ gulp.task('js-build', function (done) {
 gulp.task('assets-clean', function (done) {
     runSequence('clean-js', 'clean-css', done);
 });
-/*
 
-Documentation for the devs - jira wiki points here.
-Keeping this close to code, as it changes often.
+gulp.task('deploy-web', function (done) {
+    runSequence('get-web-artifact', 'copy-web', done);
+});
+    
+gulp.task('deploy-assets', function (done) {
+    runSequence('get-assets-artifact', 'copy-assets', done);
+});
 
-gulp js-tests
+gulp.task('deploy', function (done) {
+    runSequence('deploy-web', 'deploy-assets', done);
+});
 
-    Compiles typescript, resolve-deps, uses jasmine 2.0
-    Runs javascript tests in phantomjs firefox chrome and ie (configure in karma.conf)
-    Code Coverage with istanbul
-    reports in html for test results and coverage for Go
-
-gulp watch-tests
-
-    Same as gulp test
-    Autoruns javascript tests when files change
-
-gulp watch-js
-
-    Autoruns js dev pipeline when source files change. Supports cached rebuilds.
-
-*/
+gulp.task('deploy-parallel', ['deploy-web', 'deploy-assets']);
