@@ -21,6 +21,8 @@ function Invoke-RemoteDeploy($config) {
             param($config)
             
             # Remote commands go here
+            & "$env:systemroot\system32\inetsrv\appcmd" start apppool DefaultAppPool
+            return $lastexitcode
 
         } -ArgumentList @(, $config)
 

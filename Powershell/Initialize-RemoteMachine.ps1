@@ -1,16 +1,12 @@
 function Initialize-RemoteMachine($workingDir) {
-    # Robocopy is configured to NOT copy stuff thats already copied, unless its changed
-    $robocopy = "$yDir\..\Libs\robocopy\robocopy.exe"
-    "Copying YDeliver"
+    
+    $rootDir = "..\"
+    $robocopy = "$rootDir\Libs\robocopy\robocopy.exe"
+    "Copying BuildScripts"
     Trace-Robocopy {
-        $source = $yDir
-        $destination = "$workingDir\YDeliver"
-        &$robocopy $source $destination /v /e /purge /mir
+        $source = $rootDir
+        $destination = "$workingDir\BuildScripts"
+        &$robocopy $source $destination /v /e /purge /mir # Robocopy is configured to NOT copy stuff thats already copied, unless its changed
     }
-    "Copying BuildLibs"
-    Trace-Robocopy {
-        $source = "$yDir\..\Libs"
-        $destination = "$workingDir\Libs"
-        &$robocopy $source $destination /v /e /purge /mir
-    }
+      
 }
