@@ -1,0 +1,9 @@
+{
+    "preset": "jquery",
+    "fileExtensions": [ ".js", "jscs" ],
+
+    "excludeFiles": [
+      "**/Vendor/**",
+      "**/lib/**"
+    ]
+}

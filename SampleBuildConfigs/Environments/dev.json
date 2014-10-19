@@ -1,0 +1,12 @@
+﻿{
+	"repoPath": "../../",
+	"name": "dev",
+	"extend": "my-machine.json",
+	"webservers" : [
+		{
+			"name" : "local",
+			"websitePath" : "C:/Work/Repos/TestApp/LocalDeploy/Web",
+			"assetsPath" : "C:/Work/Repos/TestApp/LocalDeploy/Assets"
+		}
+	]
+}

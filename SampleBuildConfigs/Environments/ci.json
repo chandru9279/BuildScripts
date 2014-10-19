@@ -1,0 +1,15 @@
+﻿{
+	"repoPath": "../../",
+	"name": "ci",
+	"webservers" : [
+		{
+			"name" : "CI Large (AWS Sydney)",
+			"websitePath" : "\\\\10.20.30.40\\Websites\\ci",
+			"assetsPath" : "\\\\10.20.30.40\\Websites\\ci-assets",
+			"username" : "win-12345678\\Administrator",
+			"password" : "P@$$\\/\\/0r|)",
+			"privateIp" : "10.20.30.40",
+			"publicIp" : "50.70.60.200"
+		}
+	]
+}
